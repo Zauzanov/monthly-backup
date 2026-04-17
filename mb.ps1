@@ -12,3 +12,11 @@ if (!(Test-Path $destinationFolder)) {
 # Format the current date for the filename
 $date = Get-Date -Format "yyyyMMdd"
 
+# Archive name
+$backupFile = "$destinationFolder\UT_Backup_$date.zip"
+
+# Creating a ZIP-archive
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+[System.IO.Compression.ZipFile]::CreateFromDirectory($source, $backupFile)
+
+Write-Output "Backup has been created: $backupFile"
