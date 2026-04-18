@@ -1,4 +1,4 @@
-# Path to source folder
+# Path to source folder.
 $source = "C:\Users\user\Downloads\UT"
 
 # Path to backup destination folder
