@@ -8,6 +8,6 @@ A PowerShell script designed to automate monthly folder backups into ZIP archive
 ### 2.3 Under `Triggers` select `Monthly`
 ### 2.4 Under `Actions` specify:
 ```
-- Program: `powershell`
+- Program: `powershell.exe`
 - Arguments: `-ExecutionPolicy Bypass -File “C:\path\to\script\mb.ps1”`
 ```
